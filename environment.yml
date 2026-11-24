@@ -1,0 +1,36 @@
+name: pca-face
+
+channels:
+  - conda-forge
+  - nodefaults
+
+dependencies:
+  - python=3.12
+  - pip
+
+  # Numerical computing: use OpenBLAS
+  - libblas=*=*openblas
+  - numpy
+  - scipy
+  - pandas
+
+  # Machine learning and PCA
+  - scikit-learn
+
+  # Image processing
+  - opencv
+  - pillow
+
+  # Visualization
+  - matplotlib
+
+  # Interactive research
+  - jupyterlab
+  - ipykernel
+
+  # Configuration and utilities
+  - pyyaml
+  - tqdm
+
+  # Testing
+  - pytest
